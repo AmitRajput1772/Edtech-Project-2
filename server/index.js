@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		// origin: "https://furnify-frontend.vercel.app",
+		origin: "https://edtech-project-psi.vercel.app",
 		origin:"http://localhost:3000",
 		credentials: true,
 	})
@@ -35,7 +35,7 @@ app.use(
 app.use((req, res, next) => {
 	res.setHeader(
 		"Access-Control-Allow-Origin",
-		// "https://furnify-frontend.vercel.app"
+		"https://edtech-project-psi.vercel.app",
 		"http://localhost:3000"
 	);
 	res.setHeader(
